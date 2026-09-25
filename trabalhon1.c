@@ -143,7 +143,6 @@ int main()
     int p;
 
     
-
     while (1)
     {
         
@@ -163,7 +162,6 @@ int main()
         
         */ 
 
-        
         printf("\nCoordenada atual:\nX: %d\nY: %d", x, y);
         printf("\nDigite seu movimento: ");
         scanf(" %c", &escolha);
@@ -216,13 +214,4 @@ int main()
         
     }
     
-
-
-
-
-
-
-
-
-
 }
