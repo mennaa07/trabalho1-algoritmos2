@@ -21,7 +21,7 @@
 #define B4  494
 #define C5  523
 
-// Lista com defines para chamar instruções ANSI para o terminal (Gerada com auxilio de IA)
+// Lista com defines para chamar instruções ANSI para o terminal (Gerada com auxilio de IA) para adicionar cores ao codigo
 
 // \033 Inicia um comando | [ Inicia um parametro | 31 (e outros) são os codigos das cores | "m" aplica a alteração
 
