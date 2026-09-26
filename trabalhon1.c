@@ -72,7 +72,7 @@ void validarMovimento(int novox, int novoy, int labirinto[N][N], int *x, int *y,
         Esse trecho usa ponteiros porque, sem eles, mostrarLabirinto vai receber APENAS o X e o Y declarados no Main (0 e 0) e só vão ser alterados dentro dessa função
         Com ponteiros, eles são alterados de maneira com que altere diretamente o valor no endereço de x e y
 
-        Resumidamente, sem ponteiros o labirinto nunca vai atualizar a posicao do jogador
+        Resumidamente, sem ponteiros o labirinto nunca vai atualizar a posicao do jogador, apenas criar uma copia durante a funcao
     
     
     */
@@ -105,7 +105,7 @@ void validarMovimento(int novox, int novoy, int labirinto[N][N], int *x, int *y,
         
         else {
             printf("\nMovimento invalido!\n");
-            *pontos = *pontos - 5; // Mesma coisa vale para os pontos que vao ser mostrados ao finalizar o labirinto
+            *pontos = *pontos - 5; // Mesma coisa vale para os pontos, por isso tambem se utiliza ponteiros já que vao ser mostrados ao finalizar o labirinto
             
             printf("%d, %d", novox, novoy);
             Beep(500, 500);
@@ -143,6 +143,7 @@ int main()
     int p;
 
     
+
     while (1)
     {
         
@@ -162,6 +163,7 @@ int main()
         
         */ 
 
+        
         printf("\nCoordenada atual:\nX: %d\nY: %d", x, y);
         printf("\nDigite seu movimento: ");
         scanf(" %c", &escolha);
@@ -214,4 +216,7 @@ int main()
         
     }
     
+
+
+
 }
